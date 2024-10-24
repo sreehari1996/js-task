@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: #1f2533;
+            padding:45px;
+            color: #fff;
+            margin-top:10px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .card{
+            border-radius: 0px;
+        }
+        .card .card-header{
+            background-color:transparent;
+            border-radius:0px;
+        }
+        .card .card-header ul li{
+            list-style:none;
+            padding:15px;
+        }
+        .card .card-body li{
+            list-style:none;
+            display:inline-flex;
+            align-items: center;
+            justify-content: center;
+            width:20px;
+            height:20px;
+             border:1px solid #ddd;
+             border-radius:4px;
+             margin-left:3px;
+             padding:20px;
+             margin-right:3px;
+             margin-top:4px;
+             margin-bottom:4px;
+        }
+        .seatbooked{
+            color:#fff;
+            background-color:green;
+        }
+        .btn-book{
+            background-color: #1f2533;
+            color: #fff;
+        }
+        .btn-book:hover{
+            background-color: #1f2533;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="header">
+                   <div>
+                        Gold (U/A)
+                        INOX: Korum Mall, Eastern Express Highway, Thane
+                   </div> 
+                   <div>
+                     <select class="form-select" id ="demo" onchange="choosefilm()">
+                        <option disabled selected>choose film</option>
+                     </select>
+                   </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="mb-0">
+                            <span>
+                                <h4></h4>
+                            </span>
+                            <li id="selected_film"></li>
+                        </ul>
+                        <div class="px-5">
+                            <span>Seat : <label id="seatbooked"></label></span>
+                        </div>
+                        <div class="px-5 my-2">
+                            <span>available Seat :<label id="seat_available">100</label></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul id="seatList"></ul>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <div class="availbale-signals">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    Sold
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="available-signal">
+                                <label class="form-check-label" for="available-signal">available</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="selected">
+                                <label class="form-check-label" for="selected">Selected</label>
+                            </div>
+                        </div>
+                        <div class="bookticket">
+                            <button class="btn btn-book" id="btn_book">Book Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+        var filmslist = document.getElementById('demo');
+        const film = ['Leo','Thupakki','Nanban','Kathhi'];
+        var stopLoop = false;
+        var seat = 100;
+        var seatbooked = document.getElementsByClassName('seatbooked');
+        film[2]="Master";
+        film.push('Mersal');
+        for(i = 0; i < film.length; i ++){
+            var option = film[i];
+            var el = document.createElement("option");
+            el.textContent = option;
+            el.value = option;
+            filmslist.appendChild(el);
+            console.log(el.value);
+        }
+        function innerFunction(itemId) {
+                var selectedSeats = [];
+                var listItems = document.querySelectorAll('#seatList li');
+                var bookaction = document.getElementById('btn_book');
+                listItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    itemId = this.id;
+                    item.classList.toggle("seatbooked");
+                    if (item.classList.contains("seatbooked")) {
+                    selectedSeats.push(itemId);
+                    } else {
+                    selectedSeats = selectedSeats.filter(seat => seat !== itemId);
+                    }
+                  })
+                })
+                var clickHandler = function() {
+                    var selectd_seats = selectedSeats;
+                    var keys = selectd_seats.toString();
+                    var totalseats = seat;
+                    var bookedseats = seatbooked.length;
+                    var available = parseInt(totalseats - bookedseats);
+                    document.getElementById('seatbooked').innerHTML = keys;
+                   document.getElementById('seat_available').innerHTML = available;
+                };
+                bookaction.addEventListener('click', clickHandler);
+                return itemId;
+        }
+        function choosefilm(){
+            var listed = document.getElementById('seat_available')
+            var listed_film = document.getElementById('selected_film').innerHTML = filmslist.value;
+            var seatlist = document.getElementById('seatList');
+            for (var i = 1; i <= seat; i ++){
+                if (stopLoop) {
+                 break;
+             }
+            var seatli=document.createElement('li');
+            seatli.id = 'seat-' + i;
+            seatli.textContent= i;
+            seatlist.appendChild(seatli);
+            }
+            stopLoop = true;
+            innerFunction();
+        }
+    </script>
+</body>
+</html>

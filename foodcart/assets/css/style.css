@@ -1,0 +1,241 @@
+.header{
+    background-color:#161616;
+    height:55px;
+}
+.header .header-logotext h5{
+    padding-top:10px;
+    color:#fff;
+    font-size:15px;
+}
+.menu-items ul{
+    margin-bottom:0;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+.menu-items ul li {
+    list-style:none;
+}
+.menu-items ul li a {
+    text-decoration:none;
+    color:#fff;
+    margin-left:10px;
+    margin-right:10px;
+}
+.main-innner{
+    height:100vh;
+    position: relative;
+}
+
+.inner-sectionbg{
+    background-image: url('../images/bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width:100%;
+    height:100%;
+}
+
+.bg-color{
+    position:absolute;
+    background:linear-gradient(70deg, #090a0c, #5c5960, #191a1e, #090a0c);
+    width:100%;
+    opacity:0.7;
+}
+@media screen and (max-width:767px){
+    .bg-color{
+        height:auto;
+    }
+}
+.inner-sectext{
+    max-width: calc(300px - 10px);
+    height: calc(500px / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.inner-sectext h2{
+    color:#fff;
+    z-index:1000;
+}
+.second-place img{
+    opacity: 0.7;
+}
+.action-buttons .btn-choose{
+    background-color:#f93735;
+    border:1px solid #f93735;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:40px;
+    z-index: 1000;
+    position: relative;
+}
+.action-buttons .btn-choose:hover{
+    background-color:#f93735;
+    border:1px solid #f93735;
+    color:#fff;
+}
+.action-buttons .btn-touch{
+    border:1px solid #ddd;
+    color:#fff;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:4px;
+    height:40px;
+    position: relative;
+}
+.action-buttons .btn-touch:hover{
+    border:1px solid #ddd;
+    color:#fff;
+}
+.innerhead{
+    position: relative;
+}
+
+.innerhead::after {
+    backface-visibility: visible;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../images/red-chili.jpg);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 55px;
+    left:0;
+    opacity: 0.4;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+  }
+  .innerhead::before {
+    backface-visibility: visible;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../images/red-chili.jpg);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    opacity: 0.4;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+  }
+  .fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.card-header{
+    background-color:transparent !important;
+}
+.food-td{
+    position: relative;
+}
+.food-td .images{
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.food-td .images img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.clear-div::after{
+    content: '';
+    border:2px solid #f93735;
+    width: 30px;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+}
+.BreakFast input{
+    width:20px;
+    height:20px;
+    border-radius:50% !important;
+}
+.BreakFast input:focus{
+    box-shadow:none;
+}
+.BreakFast input{
+    position: relative;
+}
+.BreakFast input:checked{
+    background-color:#fff;
+    border-color:#fff;
+}
+.BreakFast .form-check-input:checked[type=checkbox]::after{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f185";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    color: #f93735;
+    position: absolute;
+    bottom: -5px;
+    font-size: 18px;
+    right: -3px;
+}
+.form-check-input:checked[type=checkbox]{
+    --bs-form-check-bg-image:none !important;
+}
+.Supper input{
+    width:20px;
+    height:20px;
+    border-radius:50% !important;
+}
+.Supper input:focus{
+    box-shadow:none;
+}
+.Supper input{
+    position: relative;
+}
+.Supper input:checked{
+    background-color:#fff;
+    border-color:#fff;
+}
+.Supper .form-check-input:checked[type=checkbox]::after{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f755";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    color: #f93735;
+    position: absolute;
+    bottom: -5px;
+    font-size: 18px;
+    right: -3px;
+}
+.footer{
+    background-color:#090a0c;
+    height:50vh;
+}

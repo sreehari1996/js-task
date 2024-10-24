@@ -1,0 +1,1278 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"  type="text/css" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/aos.css">
+    <link rel="stylesheet" type="text/css" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>G-cart</title>
+</head>
+<body>
+    <!-- header -->
+        <div class="primary-header d-flex align-items-center">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="sample-heading">
+                        <span>Special collection already availabale .Read More...</span>
+                    </div>
+                    <div class="pri-navlink">
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <div class="btn-group ">
+                                    <a type="button" class="btn rupees-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        INR
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="list"></ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="second-header border-bottom">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="logo-cart">
+                        <h2>G_Cart</h2>
+                    </div>
+                    <div class="search-cart">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="input-groups">
+                                <input type="text" placeholder="Search in.." class="form-control">
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected disabled>All catagories</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                  <div class="input-group-append">
+                                    <label class="input-group-text" for="inputGroupSelect02">
+                                        <i class="fas fa-search"></i>
+                                    </label>
+                                  </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="icone-bookmarks">
+                        <ul>
+                            <li>
+                                <div class="account">
+                                    <span>
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <label for="" class="d-block">Account</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="account position-relative">
+                                    <span class="count-num cart-count"  data-toggle="modal" data-target="#wishlistmodal"></span>
+                                    <span>
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    <label for="" class="d-block">Wishlist</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="account">
+                                    <span>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </span>
+                                    <label for="" class="d-block">Cart</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0  nav-second">
+                <div class="col-auto px-0">
+                    <div class="dropdown dropdown-options show">
+                        <a class="d-flex align-items-center toggle-dropdown  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="toggle-icone mr-3">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            Browse Catagories
+                        </a>
+                        <div class="dropdown-menu dropdown-catagories" aria-labelledby="dropdownMenuLink"></div>
+                      </div>
+                </div>
+                <div class="header-menu horizon-menu col-12 col-lg px-0">
+                    <nav class="main-navigation">
+                        <ul>
+                            <li>
+                                <div class="dropdown show">
+                                    <a class="btn dropdown-toggle active" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Home
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown show">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Shop
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown show">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Product
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="dropdown show">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown show">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown ml-3">
+                                    <a class="no-after">G_Cart</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3 col-sm-12 p-3">
+                    <div class="d-flex align-items-center justify-content-around">
+                        <span><i class="far fa-gem"></i></span>
+                        <p class="m-0">Clearance<span class="highlight font-weight-bold"> Up to 30% Off</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--/header -->
+    <!-- main-innerpage -->
+    <section class="main-container">
+        <div id="owl-carousel" class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="container">
+                    <div class="slider-caption">
+                        <span>Deals and Promotions</span>
+                        <div class="main-text">
+                            <h2>Wooden</h2>
+                            <h2>Sideboard Table</h2>
+                        </div>
+                        <div class="shop-now">
+                            <button class="btn btn-outline">Shop Now
+                                <span><i class="far fa-long-arrow-right"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+              <img src="images/2.jpg" class="img-fluid">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="slider-caption right-position">
+                        <span>Deals and Promotions</span>
+                        <div class="main-text">
+                            <h2>Find Comfort</h2>
+                            <h2>That Suits You.</h2>
+                        </div>
+                        <div class="shop-now">
+                            <button class="btn btn-outline">Shop Now
+                                <span><i class="far fa-long-arrow-right"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/1.jpg" class="img-fluid">
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="slider-caption ">
+                        <span>Deals and Promotions</span>
+                        <div class="main-text">
+                            <h2>Wooden</h2>
+                            <h2>Sideboard Table</h2>
+                        </div>
+                        <div class="shop-now">
+                            <button class="btn btn-outline">Shop Now
+                                <span><i class="far fa-long-arrow-right"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/3.jpg" class="img-fluid">
+            </div>
+          </div>
+    </section>
+    <!-- main-innerpage -->
+    <section class="brand-slider">
+        <div id="brand-slider" class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="images">
+                    <img src="images/l1.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="item">
+                <div class="images">
+                    <img src="images/l2.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="item">
+                <div class="images">
+                    <img src="images/l3.webp" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="shop_ad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-details p-5">
+                                <p class="Clearance">Clearance</p>
+                                <h3>Coffee Tables</h3>
+                                <p class="currency">from $19.99</p>
+                                <button class="btn btn-outline">
+                                    Shop Now
+                                    <i class="far fa-long-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cols-sm-12">
+                    <div class="card">
+                        <div class="card-content2">
+                            <div class="card-details p-5">
+                                <p class="Clearance">Clearance</p>
+                                <h3>Coffee Tables</h3>
+                                <p class="currency">from $19.99</p>
+                                <button class="btn btn-outline">
+                                    Shop Now
+                                    <i class="far fa-long-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cols-sm-12">
+                    <div class="card">
+                        <div class="card-content3 mb-3">
+                            <div class="card-details p-5">
+                                <p class="Clearance">Clearance</p>
+                                <h3>Coffee Tables</h3>
+                                <p class="currency">from $19.99</p>
+                                <button class="btn btn-outline">
+                                    Shop Now
+                                    <i class="far fa-long-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content4">
+                            <div class="card-details p-5">
+                                <p class="Clearance">Clearance</p>
+                                <h3>Coffee Tables</h3>
+                                <p class="currency">from $19.99</p>
+                                <button class="btn btn-outline">
+                                    Shop Now
+                                    <i class="far fa-long-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+        <section class="listproduct">
+            <div class="Product-list-content">
+                <ul class="nav nav-tabs d-flex align-items-center justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Featured</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">On Sale</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Top Rated</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="featured-slider">
+                            <div id="featured-slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-1.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-2.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                            <div class="add-cart">
+                                                <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="sales-slider featured-slider">
+                            <div id="sales-slider" class="sales-sliders owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-1.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-2.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                            <div class="add-cart">
+                                                <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <!-- <div class="sales-slider featured-slider">
+                            <div id="sales-slider" class="sales-sliders owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-1.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-2.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                            <div class="add-cart">
+                                                <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="images">
+                                        <img src="images/li-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                                    </div>
+                                    <div class="Product-details">
+                                        <span class="title">G_Cart</span>
+                                        <div class="octa">
+                                           <p> Octo 4240</p>
+                                           <p>Rs.62900.00</p>
+                                        </div>
+                                        <div class="rating">
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon filled">★</span>
+                                            <span class="star-icon">★</span>
+                                            <span class="reviews-text">
+                                            (68 reviews)
+                                            </span>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                  </div>
+            </div>
+        </section>
+    <!--  -->
+
+    <!--  -->
+        <section class="dealoftheday">
+            <div class="deals">
+                <div class="container-fluid bg-white p-0">
+                    <div class="row mx-0 p-3">
+                        <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="deals-content">
+                                <span>Limited Quantities</span>
+                                <h2>Deal of the Day</h2>
+                                <div class="get-price">
+                                    <h4>Armchair orrsta golden</h4>
+                                    <p>Rs. 12,700.00</p>
+                                </div>
+                                <div class="time-count">
+                                    <div class="count-down d-flex align-items-center">
+                                        <div class="block cdhrs">
+                                            <div id="tiles">
+                                                <span id="hours">04</span>
+                                            </div>
+                                            <span class="d-block times">hrs</span>
+                                        </div>
+                                        :
+                                        <div class="block cd-mins">
+                                            <div>
+                                                <span id="minutes">01</span>
+                                            </div>
+                                            <span class="d-block times">Mins</span>
+                                        </div>
+                                        :
+                                        <div class="block cd-secs">
+                                            <span id="secs">19</span>
+                                            <span class="d-block times">Secs</span>
+                                        </div>
+                                    </div>
+                                    <div class="shop-now">
+                                        <button class="btn btn-lineouter">
+                                            Shop Now 
+                                            <i class="far fa-long-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="images">
+                                <img src ="images/ab-1.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="images">
+                                <img src ="images/b-2.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--  -->
+
+    <!--  -->
+        <section class="SellingProducts">
+            <div class="sellingproduct-title container">
+                <h2>Top Selling Products</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/li-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-1.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-2.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-4.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-5.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/li-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-1.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-2.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-4.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card">
+                            <div class="images">
+                                <img src="images/ab-5.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="img-fluid">
+                            </div>
+                            <div class="Product-details">
+                                <span class="title">G_Cart</span>
+                                <div class="octa">
+                                   <p> Octo 4240</p>
+                                   <p>Rs.62900.00</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon filled">★</span>
+                                    <span class="star-icon">★</span>
+                                    <span class="reviews-text">
+                                    (68 reviews)
+                                    </span>
+                                </div>
+                                <div class="add-cart">
+                                    <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--  -->
+
+    <!--  -->
+        <section class="our-blogs container">
+            <h2>From Our Blog</h2>
+            <div class="blog-section mt-5">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="blog">
+                            <img src="./images/bl-1.jpg" class="img-fluid">
+                        </div>
+                        <div class="Product-details">
+                            <span class="title">G_Cart</span>
+                            <div class="octa">
+                               <p> Octo 4240</p>
+                               <p>Rs.62900.00</p>
+                            </div>
+                            <div class="rating">
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon">★</span>
+                                <span class="reviews-text">
+                                (68 reviews)
+                                </span>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="blog">
+                            <img src="./images/bl-2.jpg" class="img-fluid">
+                        </div>
+                        <div class="Product-details">
+                            <span class="title">G_Cart</span>
+                            <div class="octa">
+                               <p> Octo 4240</p>
+                               <p>Rs.62900.00</p>
+                            </div>
+                            <div class="rating">
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon">★</span>
+                                <span class="reviews-text">
+                                (68 reviews)
+                                </span>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="blog">
+                            <img src="./images/bl-3.jpg" class="img-fluid">
+                        </div>
+                        <div class="Product-details">
+                            <span class="title">G_Cart</span>
+                            <div class="octa">
+                               <p> Octo 4240</p>
+                               <p>Rs.62900.00</p>
+                            </div>
+                            <div class="rating">
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon filled">★</span>
+                                <span class="star-icon">★</span>
+                                <span class="reviews-text">
+                                (68 reviews)
+                                </span>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn btn-outline"><span class="mx-1"><i class="fas fa-cart-plus"></i></span>ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 view-more-article d-flex align-items-center justify-content-center">
+                        <button class="btn view-more">View More Article 
+                            <span class="mx-2"><i class="far fa-long-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--  -->
+
+    <!--  -->
+        <section class="individual">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="icon-box">
+                            <div>
+                                <span class="icon-box-icon"><i class="far fa-info-circle"></i></span>
+                            </div>
+                            <div class="mx-3">
+                                <a href="#" aria-label="Free Shipping" class="icon-box-content">
+                                    <h3 class="icon-box-title">Free Shipping</h3>
+                                    <p>Orders $50 or more</p>
+                                  </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="icon-box">
+                            <div>
+                                <span class="icon-box-icon"><i class="far fa-infinity"></i></span>
+                            </div>
+                            <div class="mx-3">
+                                <a href="#" aria-label="Free Shipping" class="icon-box-content">
+                                    <h3 class="icon-box-title">Free Shipping</h3>
+                                    <p>Orders $50 or more</p>
+                                  </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="icon-box">
+                            <div>
+                                <span class="icon-box-icon"><i class="far fa-person-sign"></i></span>
+                            </div>
+                            <div class="mx-3">
+                                <a href="#" aria-label="Free Shipping" class="icon-box-content">
+                                    <h3 class="icon-box-title">Free Shipping</h3>
+                                    <p>Orders $50 or more</p>
+                                  </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--  -->
+    
+    <!--  -->
+        <section class="search-footer">
+            <div class="deals">
+                <h5>Get The Latest Deals</h5>
+                <div class="d-block first">
+                    <span>and receive <span class="doller">$20 coupon</span>  for first shopping</span>
+                </div>
+                <div class="search">
+                    <div class="input-group mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                        <input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon2">Subscribe <i class="far fa-long-arrow-right mx-2"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--  -->
+    <section class="footer">
+        <div class="container">
+            <div class="row mx-0">
+                <div class="col-md-7 col-sm-12">
+                    <div class="footer-header">
+                        <h4>G_Cart</h4>
+                        <div class="para-text">
+                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,
+                            eu vulputate magna eros eu erat. Aliquam erat volutpat.
+                            Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="col-md-5 col-sm-12 px-0">
+                            <span class="d-block question-s">Got Question? Call us 24/7</span>
+                            <span class="d-block question-n">+98 765 432</span>
+                        </div>
+                        <div class="col-md-7 col-sm-12 px-0">
+                            <div class="payment-method">
+                                <span>Payment Method</span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 pr-0">
+                    <div class="row small-gutters">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-links">
+                                <p class="heads">User Links</p>
+                                <ul class="widget-list list-unstyled">
+                                    <li><a href="/pages/about-us">About Midas</a></li>
+                                    <li><a href="#">How to shop on Molla</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Log in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-links">
+                                <p class="heads">Customer Service</p>
+                                <ul class="widget-list list-unstyled">
+                                    <li><a href="#">Payment Methods</a></li>
+                                    <li><a href="#">Money-back guarantee!</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Terms and conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-links">
+                                <p class="heads">My Account</p>
+                                <ul class="widget-list list-unstyled">
+                                    <li><a href="/account/register">Sign In</a></li>
+                                    <li><a href="/cart">View Cart</a></li>
+                                    <li><a href="/pages/wishlist">My Wishlist</a></li>
+                                    <li><a href="#">Track My Order</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Copyright">
+                <div class="w-100 p-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <span class="Rights">Copyright © 2019 Molla Store. All Rights Reserved.</span>
+                            <span class="copy">
+                                <a href="#">Terms / Privacy Policy</a>
+                            </span>
+                        </div>
+                        <div class="social-media">
+                            <span>Social Media</span>
+                            <ul class="media">
+                                <li>
+                                    <a><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fab fa-facebook-messenger"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fab fa-whatsapp"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+ <!-- wishlist modal -->
+ <div class="modal wishlistmodal-modal" id="wishlistmodal" tabindex="-1" role="dialog" aria-labelledby="wishlistmodal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="wishlistmodal">Wish-List</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-common-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+<script src ="assets/js/aos.js"></script>
+<script src ="assets/js/main.js"></script>
+</body>
+</html>

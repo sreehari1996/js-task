@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"  href="assets/css/aos.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Chechies Cart</title>
+</head>
+    <body>
+        <div class="header">
+            <div class="d-flex align-items-center justify-content-between px-5 h-100">
+                <div class="header-logotext">
+                    <h5>Best Of Taste</h5>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li>
+                           <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Service</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-innner">
+            <div class="inner-sectionbg">
+                <div class="bg-color"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="inner-sectext">
+                               
+                                <h2>Delivery of fresh and hot food with in 40 minutes</h2>
+                            </div>
+                            <div class="action-buttons d-flex">
+                                <div class="mx-2" data-aos="fade-right">
+                                    <button class="btn btn-choose">View More</button>
+                                </div>
+                                <div data-aos="fade-left">
+                                    <button class="btn btn-touch">Get In Touch</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="second-place"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                                <img src="assets/images/Untitled-3.png" class="img-fluid " >
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 position-relative">
+                        <div class="innerhead " >
+                            <div class="text-container px-5">
+                                <p>
+                                    Where does it come from?
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", 
+                                    comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h3 id="month"></h3>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table table-striped   table-bordered" >
+                            <thead>
+                                <tr>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                    <th>Total Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="myTable">
+                                <tr id="loops">
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td rowspan="5" class="text-center" style="vertical-align:bottom;">
+                                        <div class="totalamount total_amount" id="total_amount">0</div>
+                                     </td>
+                                </tr>
+                                <tr id="loops">
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr id="loops">
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr id="loops">
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr id="loops">
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="food-td">
+                                            <div class="images">
+                                                <img src="assets/images/malay-laksa-sh.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="clear-div my-2"></div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="form-check BreakFast">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox"  value="" id="flexCheckBreakFast">
+                                                            <label class="form-check-label" for="flexCheckBreakFast">
+                                                                BreakFast
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check Supper">
+                                                            <input class="form-check-input flexCheckBreakFast" type="checkbox" value="" id="flexCheckSupper">
+                                                            <label class="form-check-label" for="flexCheckSupper">
+                                                                Supper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                   
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="clear-fix"></div>
+        <footer class="footer">
+        </footer>
+        <script src="assets/js/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script>
+            AOS.init();
+            const months = ["January","February","March","April","May","june","July","augest","September","October","November","December"]
+            const today = new Date();
+            const month = months[today.getMonth()];
+            document.getElementById('month').innerHTML = month;
+            var Amount = 50;
+            var checkboxes =  document.querySelectorAll('.flexCheckBreakFast');
+            checkboxes.forEach(function(checkbox){
+                checkbox.addEventListener('click' ,getCheckedCount);
+            })
+            function getCheckedCount() {
+                 var checkedCount = 0;
+                checkboxes.forEach(function(checkbox) {
+                    if (checkbox.checked) {
+                        checkedCount++;
+                    }
+                });
+                var checkcount = checkedCount;
+                var totalamout = parseInt(checkcount * Amount);
+                document.getElementById('total_amount').innerHTML = totalamout;
+                var ddd =  document.getElementById('total_amount').innerHTML = totalamout;
+                localStorage.setItem('totalamout', totalamout.toString());
+                var retrievedTotalAmount = parseInt(localStorage.getItem('totalamout'));
+                console.log(retrievedTotalAmount);
+            }
+
+      
+            // function monthscount(){
+            //     var existingTR = document.getElementById('loops');
+            //     var table = document.getElementById('myTable');
+            //     if (existingTR && table) {
+            //         for (var i = 0; i < 4; i++) {
+            //         var clonedTR = existingTR.cloneNode(true); 
+            //         table.appendChild(clonedTR);
+            //         }
+            //     }
+            //      else {
+            //         console.error("Table element with ID 'myTable' not found.");
+            //     }
+            // }
+            // monthscount();
+        </script>
+    </body>
+</html>

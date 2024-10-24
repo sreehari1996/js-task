@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@use '../sass/includes/custom';
+@use '../sass/includes/varibale';
+@use '../sass/includes/mixins';
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../../fonts/static/Jost-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family:'Jost' !important;
+    font-size:14px;
+    line-height: 1.86;
+    -webkit-font-smoothing: antialiased;
+}
+.form-control,.custom-select,h2{
+    font-family: 'Jost';
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.small-gutters{
+    &>div{
+        padding-left:3.5px;
+        padding-right:3.5px;
+    }
+}
+.btn-common-primary{
+    background-color:var(--primary-color);
+    color: var(--white);
+    border:1px solid var(--primary-color);
+    &:hover{
+        background-color:var(--primary-color);
+        color: var(--white);
+        border:1px solid var(--primary-color);
+        opacity:0.8;
+    }
+}

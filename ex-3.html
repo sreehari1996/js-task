@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <p id="count_alpha"></p>
+       <script>
+            var full = document.getElementById('count_alpha').innerHTML = "Techmaven IT Solution";
+            var countslipt = full.split("");
+            var countobject = {};
+            var letter = "";
+            for(var i=0;i<countslipt.length;i++){
+                var char = countslipt[i].toLowerCase();
+                if(/^[a-z]$/.test(char)){
+                    countobject[char] = ((countobject[char] || 0) + 1);
+                }
+            }
+            for(var alpha in countobject){
+                letter += alpha+ ":"+ countobject[alpha];
+            }
+            document.getElementById('count_alpha').innerHTML = letter;
+       </script> 
+    </body>
+</html>
