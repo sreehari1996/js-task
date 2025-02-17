@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display:grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            gap:10px;
+           
+        }
+        .grid  div{
+            border:1px solid #ddd;
+            padding:20px;
+        }
+        .grid2{
+            display:grid;
+            /* grid-template-columns:minmax(150px, 1fr) minmax(200px ,1fr) minmax(150px ,1fr); */
+            /* grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr); */
+             grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+            gap:10px;
+        }
+        .grid2 div{
+            border:1px solid #ddd;
+            padding:2px;
+        }
+        .grid3{
+            display: grid;
+            grid-template-columns:repeat(auto-fit , minmax(150px,1fr));
+            gap:10px;
+        }
+        .grid3 div{
+            border:1px solid #ddd;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- <h2>grid-template-columns:1fr 2fr 2fr</h2> -->
+        <div class="list1" id="list"></div>
+    </div>
+    
+    <!-- <div class="grid2">
+        <h2>grid-template-columns:minmax(200px,1fr) minmax(200px,2fr) minmax(200px 2fr)</h2>
+
+        <div class="list1"></div>
+        <div class="list1"></div>
+        <div class="list2"></div>
+        <div class="list3"></div>
+         <div class="list1"></div>
+    </div> -->
+    <!-- <div class="grid3">
+        <h2>grid-template-columns:repeat(auto-fit minmax(150px 1fr))</h2>
+        <div class="list2"></div>
+        <div class="list3"></div>
+        <div class="list4"></div>
+        <div class="list5"></div>
+    </div> -->
+    <script>
+        async function ShowData(){
+            try{
+              let userData = await fetch("http://localhost:3001/users");
+              let response = await userData.json();
+              console.log(response);
+              let getDiv = document.getElementById("list");
+              getDiv.innerHTML = "";
+              response.forEach(user=>{
+                let creatediv = document.createElement("div");
+                creatediv.classList.add("child-div");
+                creatediv.innerHTML = `<strong>UserName:</strong>${user.username}<br><strong>Password:</strong>${user.password}`;
+                getDiv.appendChild(creatediv);
+              })
+            }
+            catch(error){
+                console.log('datafetech not working',error)
+            }
+        }
+        ShowData();
+    </script>
+
+</body>
+</html>

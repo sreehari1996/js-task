@@ -1,0 +1,193 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "1234"
+    },
+    {
+      "username": "test",
+      "password": "test123",
+      "id": 2
+    },
+    {
+      "username": "test",
+      "password": "test123",
+      "id": 3
+    },
+    {
+      "username": "admin",
+      "password": "admin123",
+      "id": 4
+    },
+    {
+      "username": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "username": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "username": "ttt",
+      "password": "",
+      "id": 7
+    },
+    {
+      "username": "ttt",
+      "password": "5454",
+      "id": 8
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "username": "admin2",
+      "password": "12345",
+      "id": 10
+    }
+  ],
+  "formData": [
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "test",
+      "password": "test123",
+      "id": 3
+    },
+    {
+      "username": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 11
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 12
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 13
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 14
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 15
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 16
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 17
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 18
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 19
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 20
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 21
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 22
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 23
+    },
+    {
+      "username": "admin",
+      "password": "admin123",
+      "id": 24
+    },
+    {
+      "username": "rr",
+      "password": "rr",
+      "id": 25
+    },
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": 26
+    },
+    {
+      "username": "admin",
+      "password": "admin123",
+      "id": 27
+    },
+    {
+      "username": "test",
+      "password": "test123",
+      "id": 28
+    }
+  ],
+  "productData":[
+    {
+      "id":1,
+      "Product":"ആപ്പിൾ",
+      "price":"200 rs"
+    },
+    {
+      "id":2,
+      "Product":"ഓറഞ്ച്",
+      "price":"100 rs"
+    },
+    {
+      "id":3,
+      "Product":"ചക്ക",
+      "price":"100 rs"
+    },
+    {
+      "id":4,
+      "Product":"മാമ്പഴം",
+      "price":"300 rs"
+    }
+  ]
+}

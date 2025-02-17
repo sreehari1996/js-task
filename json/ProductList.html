@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display:grid;
+            grid-template-columns: minmax(5px, 1fr) minmax(200px, 2fr) minmax(10px, 1fr);
+            gap:10px;
+        }
+        .grid div{
+            border:1px solid #ddd;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="id" id="id"></div>
+        <div class="product" id="product"></div>
+        <div class="price" id="price"></div>
+    </div>
+
+    <script>
+        async function getProduct(){
+            try{
+                let product = await fetch('http://localhost:3001/productData');
+                let productItem = await product.json();
+                let targetid = document.getElementById("id");
+                targetid.innerHTML="";
+                productItem.forEach(userid=>{
+                    let id_div = document.createElement("div");
+                    id_div.classList.add("id");
+                    id_div.innerHTML=`<strong>${userid.id}</strong>`;
+                    targetid.appendChild(id_div);
+                })
+                let targetProduct = document.getElementById("product");
+                targetProduct.innerHTML="";
+                productItem.forEach(userproduct=>{
+                    let product_div = document.createElement("div");
+                    product_div.classList.add("product");
+                    product_div.innerHTML=`<strong>${userproduct.Product}</strong>`;
+                    targetProduct.appendChild(product_div);
+                })
+
+                let targetPrice = document.getElementById("price");
+                targetPrice.innerHTML="";
+                productItem.forEach(userprice=>{
+                    let price_div = document.createElement("div");
+                    price_div.classList.add("product");
+                    price_div.innerHTML=`<strong>${userprice.price}</strong>`;
+                    targetPrice.appendChild(price_div);
+                })
+            }
+            catch(error){
+                console.log("data fetching faild",error);
+            }
+        }
+        getProduct();
+    </script>
+</body>
+</html>
